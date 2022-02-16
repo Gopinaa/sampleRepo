@@ -27,7 +27,7 @@ pipeline{
 				echo 'this is deploy file'
 							
 				withCredentials([
-					userNamePassword(credentials:'server-creds',userNmaeVariable:USER,passwordVariable:PWD)
+					usernamePassword(credentials:'server-creds',usernameVariable:USER,passwordVariable:PWD)
 				]){
 					sh "some script ${USER} ${PWD}"
 				
