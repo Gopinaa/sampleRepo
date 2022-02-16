@@ -26,12 +26,12 @@ pipeline{
 			steps {
 				echo 'this is deploy file'
 							
-				withCredentials([
-					usernamePassword(credentials:'server-creds',usernameVariable:USER,passwordVariable:PWD)
-				]){
+				//withCredentials([
+					//usernamePassword(credentials:'server-creds',usernameVariable:USER,passwordVariable:PWD)
+				//]){
 					//sh "some script ${USER} ${PWD}"
 				
-				}
+				//}
 			}
 		}
 	}
