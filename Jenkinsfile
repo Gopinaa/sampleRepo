@@ -3,7 +3,7 @@ pipeline{
 	
 	environment {
 		NEW_VERSION='1.0.3'
-		SERVER_CREDENTIALS=credentials('server-creds')
+		//SERVER_CREDENTIALS=credentials('server-creds')
 		
 		
 	}
@@ -18,8 +18,8 @@ pipeline{
 		stage("test") {
 			steps {
 				echo 'this is test file'
-				echo " credentials &{SERVER_CREDENTIALS}"
-				sh "SERVER_CREDENTIALS"
+				//echo " credentials &{SERVER_CREDENTIALS}"
+				//sh "SERVER_CREDENTIALS"
 			}
 		}
 		stage("deploy") {
